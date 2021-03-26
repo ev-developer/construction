@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: khaki;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:focus{
+    outline: none;
+}
+a:hover{
+    color: white;
+}
+.header-line {
+    background: url(images/header_line.png) repeat-x 0px 0px;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: #333333;
+    position: relative;
+}
+.jx-topbar {
+    background: #222222;
+    height: 41px;
+    overflow: hidden;
+    z-index: 999;
+    position: relative;
+    border-bottom: solid 1px #444444;
+}
+.logo{
+    max-width: 77px;
+}
+.logotext{
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+    padding-top:5px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding: 0px;
+    padding-top: 0px;
+    margin: 0px 23px;
+    font-size: 1.2em;
+    float: left;
+}
+p{
+    margin: 10px;
+    text-align: justify;
+}
+.columns{
+    display: flex;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 50px;
+    text-rendering: auto;
+    transform: translate(0, 0);
+    color: orange;
+}
+.icon{
+    font-size: 50px;
+    float: left;
+    margin-right: 5px;
+}
+.top-space {
+    padding-top:10px;
+}
+.adress{
+    width: 177px;
+}
+.time{
+    width: 182px;
+}
+.date{
+    width: 226px;
+}
+.number{
+    width: 232px;
+    
+}
+.container{
+    display: flex;
+}
+
+
+.carousel{
+    max-width: 50vw;
+}
+.carousel-caption h4, p{
+    color: black;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    position: fixed;
+    transform: skewX(-45deg);
+    background: orange;
+    height: 2em;
+    font-size: 2em;
+    padding: 5px 30px 5px 30px;
+    color: white;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+.button > div {
+    transform: skewX(45deg);
+}
+.button2{
+    position: fixed;
+    transform: skewX(-45deg);
+    background: blue;
+    height: 2em;
+    font-size: 2em;
+    padding: 5px 30px 5px 30px;
+    color: white;
+    margin-top: 9%;
+    margin-left: 60%;
+    cursor: default;
+}
+.button2 > div {
+    transform: skewX(45deg);
+}
+@media (max-width: 1230px){
+ .button, .button2{
+    font-size: 1em;
+ }
+ .button2{
+    margin-top: 7.5%;
+ }
+ .logotext{
+    font-size: 2em;
+ }
+ .logo{
+    width: 2em;
+ }
+}
+@media (max-width: 1100px){
+ .carousel{
+    max-width: 70vw;
+}
+.logo{
+    margin-top: 15px;
+}
+}
+@media (max-width: 1000px){
+ .button2{
+    margin-top: 9%;
+ }
+ .carousel{
+    max-width: 70vw;
+}
+.media{
+    display: none;
+}
+
+}
+@media (max-width: 750px){
+.button, .button2{
+    display: none;
+ }
+ .carousel{
+    max-width: 100vw;
+}
+.media2{
+    display: none;
+}
+}

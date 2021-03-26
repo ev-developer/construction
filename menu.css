@@ -1,0 +1,49 @@
+/*меню*/
+nav {
+    position: relative;
+    z-index: 1;
+    padding-left: 1em;
+    color: orange;
+    text-align: right;
+    margin-right: 50px;
+
+}
+
+nav > a {
+    position: relative;
+    display: inline-block;
+    padding: .3em 1em 0;
+    color: inherit;
+    text-decoration: none;
+    margin: 0 -.3em;
+
+} 
+
+nav > a::before,
+
+
+nav a::before {
+    content: ''; /* To generate the box */
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    border-bottom: none;
+    border-radius: .5em .5em 0 0;
+    background: black linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,0));
+    box-shadow: 0 .15em silver inset;
+    transform: scale(1.1, 1.3) perspective(.5em) rotateX(5deg);
+    transform-origin: bottom;
+}
+
+nav a.selected { z-index: 2;}
+
+nav a.selected::before {
+    background-color: #333333;
+    margin-bottom: -.08em;
+}
+
+
+nav.left > a::before {
+    transform: scale(1.2, 1.3) perspective(.5em) rotateX(5deg);
+    transform-origin: bottom left;
+}
