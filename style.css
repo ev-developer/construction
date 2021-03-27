@@ -19,6 +19,7 @@ a:hover{
     background-color: rgba(0, 0, 0, 0);
     background-color: #333333;
     position: relative;
+    width: 100%;
 }
 .jx-topbar {
     background: #222222;
